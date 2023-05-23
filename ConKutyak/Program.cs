@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var sorok = File.ReadAllLines("Datas\\Kutyak.csv");
+            foreach (var sor in sorok)
+            {
+                Console.WriteLine(sor);
+            }
         }
     }
 }
